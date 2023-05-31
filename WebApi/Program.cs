@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddSingleton<ToDoService>();
 builder.Services.AddSingleton<CategoryToDoService>();
+builder.Services.AddSingleton<ArchiveToDoService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
