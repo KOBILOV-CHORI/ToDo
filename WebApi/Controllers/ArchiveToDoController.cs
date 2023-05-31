@@ -12,10 +12,15 @@ public class ArchiveToDoController : ControllerBase
     {
         this.archiveToDoService = ArchiveToDoService;
     }
-    [HttpPost("Add ArchiveToDo")]
+    [HttpPost("Add Archive")]
     public int Add(int id)
     {
         return archiveToDoService.AddArchiveToDo(id);
+    }
+    [HttpGet("Get from Archive")]
+    public int Get(int id)
+    {
+        return archiveToDoService.GetArchiveToDo(id);
     }
     [HttpDelete("Delete")]
     public int Delete(int id)
